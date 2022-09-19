@@ -1,15 +1,3 @@
-// window.addEventListener("load", iniciar, false);
-
-// function iniciar() {
-//     let bars_menu = document.getElementById("bars_menu");
-//     bars_menu.addEventListener("mouseover", menuJump);
-// }
-
-// function menuJump() {
-//     let bars_menu = (document.getElementById("bars_menu").innerHTML =
-//         "img/bars-2");
-// }
-
 const productContainers = [...document.querySelectorAll(".spot-container")];
 const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
 const preBtn = [...document.querySelectorAll(".pre-btn")];
@@ -24,5 +12,25 @@ productContainers.forEach((item, i) => {
 
     preBtn[i].addEventListener("click", () => {
         item.scrollLeft -= containerWidth;
+    });
+});
+
+window.addEventListener("load", () => {
+    const menu_header = document.querySelector(".list");
+    const btn_menu = document.querySelector(".bars-menu");
+
+    btn_menu.addEventListener("click", () => {
+        menu_header.classList.toggle("header_open");
+        const parkour_spots = document.querySelector(".spots");
+        let style_element = window.getComputedStyle(parkour_spots);
+        let element_display = style_element.getPropertyValue("display");
+
+        setTimeout(() => {
+            if (element_display === "flex") {
+                parkour_spots.style.display = "none";
+            } else if (element_display === "none") {
+                parkour_spots.style.display = "flex";
+            }
+        }, 200);
     });
 });
