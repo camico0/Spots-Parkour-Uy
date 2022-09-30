@@ -1,23 +1,8 @@
-const productContainers = [...document.querySelectorAll(".spot-container")];
-const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
-const preBtn = [...document.querySelectorAll(".pre-btn")];
-
-productContainers.forEach((item, i) => {
-    let containerDimensions = item.getBoundingClientRect();
-    let containerWidth = containerDimensions.width;
-
-    nxtBtn[i].addEventListener("click", () => {
-        item.scrollLeft += containerWidth;
-    });
-
-    preBtn[i].addEventListener("click", () => {
-        item.scrollLeft -= containerWidth;
-    });
-});
-
 window.addEventListener("load", () => {
     const menu_header = document.querySelector(".list");
     const btn_menu = document.querySelector(".bars-menu");
+    const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
+    const preBtn = [...document.querySelectorAll(".pre-btn")];
 
     btn_menu.addEventListener("click", () => {
         menu_header.classList.toggle("header_open");
@@ -32,5 +17,19 @@ window.addEventListener("load", () => {
                 parkour_spots.style.display = "flex";
             }
         }, 200);
+    });
+
+    preBtn[0].addEventListener("click", () => {
+        let container = document.getElementsByClassName("spot-container")[0];
+        let spot_card = document.getElementsByClassName("product-card")[0];
+
+        container.scrollLeft -= spot_card.clientWidth;
+    });
+
+    nxtBtn[0].addEventListener("click", () => {
+        let container = document.getElementsByClassName("spot-container")[0];
+        let spot_card = document.getElementsByClassName("product-card")[0];
+
+        container.scrollLeft += spot_card.clientWidth;
     });
 });

@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Cuprum&family=Figtree:wght@500;600&family=IBM+Plex+Sans:wght@300&family=Lato:wght@300;400;700&family=M+PLUS+1p&family=Montserrat+Alternates&family=Montserrat:wght@500&family=Open+Sans&family=Poppins:ital,wght@0,600;1,900&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&family=Space+Mono:ital@0;1&family=Work+Sans:wght@100;300;500&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+    <link rel="stylesheet" href="./mapa.css">
 </head>
 
 <body>
@@ -45,29 +46,29 @@
             </div>
         </div>
 
-        <section class=" spots ">
-            <h2 class=" spots-category ">Spots Parkour Montevideo</h2>
-            <div class=" container-cards ">
+        <section class="spots">
+            <h2 class="spots-category ">Spots Parkour Montevideo</h2>
+            <div class="container-cards" id="slider">
 
-                <button class=" pre-btn ">〕</button>
-                <button class=" nxt-btn ">〕</button>
+                <button class="pre-btn">〕</button>
+                <button class="nxt-btn">〕</button>
 
-                <div class=" spot-container ">
-                    <div class=" product-card ">
-                        <div class=" product-image ">
-                            <!-- <div class=" place_tag ">Something</div> -->
+                <div class="spot-container">
+                    <!-- <div class=" product-card "> -->
+                    <!-- <div class=" product-image "> 
+                     <div class=" place_tag ">Something</div>
                             <img src=" ./img/parkour-spots/teatrosolis.jpg " class=" spot-thumb " alt=" ">
-                            <button class=" spot-card ">View on Google Maps</button>
-                        </div>
+                            <button class=" spot-card ">View on Google Maps</button> 
+                     </div>
                         <div class=" spot-info ">
                             <h2 class=" spot-title ">Teatro Solís</h2>
-                            <p class=" product-short-description ">a short line about the cloth..</p>
+                            <p class=" product-short-description ">a short line about the cloth..</p> -->
 
-                        </div>
-                    </div>
-                    <div class=" product-card ">
+                    <!-- </div>  -->
+                    <!-- </div> -->
+                    <!-- <div class=" product-card ">
                         <div class=" product-image ">
-                            <!-- <div class=" place_tag ">Something</div> -->
+                            <div class=" place_tag ">Something</div>
                             <img src=" ./img/parkour-spots/gomensoro.jpg " class=" spot-thumb " alt=" ">
                             <button class=" spot-card ">View on Google Maps</button>
                         </div>
@@ -79,7 +80,7 @@
                     </div>
                     <div class=" product-card ">
                         <div class=" product-image ">
-                            <!-- <div class=" place_tag ">Something</div> -->
+                            <div class=" place_tag ">Something</div>
                             <img src=" ./img/parkour-spots/plazaargentina.jpg " class=" spot-thumb " alt=" ">
                             <button class=" spot-card ">View on Google Maps</button>
                         </div>
@@ -92,7 +93,7 @@
 
                     <div class=" product-card ">
                         <div class=" product-image ">
-                            <!-- <div class=" place_tag ">Something</div> -->
+                            <div class=" place_tag ">Something</div>
                             <img src=" ./img/parkour-spots/intendencia.jpg " class=" spot-thumb " alt=" ">
                             <button class=" spot-card ">View on Google Maps</button>
                         </div>
@@ -103,7 +104,7 @@
                     </div>
                     <div class=" product-card ">
                         <div class=" product-image ">
-                            <!-- <div class=" place_tag ">Something</div> -->
+                            <div class=" place_tag ">Something</div>
                             <img src=" ./img/parkour-spots/plaza11.jpg " class=" spot-thumb " alt=" ">
                             <button class=" spot-card ">View on Google Maps</button>
                         </div>
@@ -116,7 +117,7 @@
 
                     <div class=" product-card ">
                         <div class=" product-image ">
-                            <!-- <div class=" place_tag ">Something</div> -->
+                            <div class=" place_tag ">Something</div>
                             <img src=" ./img/parkour-spots/ideavilariño.jpeg " class=" spot-thumb " alt=" ">
                             <button class=" spot-card ">View on Google Maps</button>
                         </div>
@@ -129,7 +130,7 @@
 
                     <div class=" product-card ">
                         <div class=" product-image ">
-                            <!-- <div class=" place_tag ">Something</div> -->
+                            <div class=" place_tag ">Something</div>
                             <img src=" ./img/parkour-spots/card1.jpg " class=" spot-thumb " alt=" ">
                             <button class=" spot-card ">View on Google Maps</button>
                         </div>
@@ -141,7 +142,7 @@
                     </div>
                     <div class=" product-card ">
                         <div class=" product-image ">
-                            <!-- <div class=" place_tag ">Something</div> -->
+                            <div class=" place_tag ">Something</div>
                             <img src=" ./img/parkour-spots/card1.jpg " class=" spot-thumb " alt=" ">
                             <button class=" spot-card ">View on Google Maps</button>
                         </div>
@@ -153,7 +154,7 @@
                     </div>
                     <div class=" product-card ">
                         <div class=" product-image ">
-                            <!-- <div class=" place_tag ">Something</div> -->
+                            <div class=" place_tag ">Something</div>
                             <img src=" ./img/parkour-spots/card1.jpg " class=" spot-thumb " alt=" ">
                             <button class=" spot-card ">View on Google Maps</button>
                         </div>
@@ -165,7 +166,7 @@
                     </div>
                     <div class=" product-card ">
                         <div class=" product-image ">
-                            <!-- <div class=" place_tag ">Something</div> -->
+                            <div class=" place_tag ">Something</div>
                             <img src=" ./img/parkour-spots/card1.jpg " class=" spot-thumb " alt=" ">
                             <button class=" spot-card ">View on Google Maps</button>
                         </div>
@@ -177,7 +178,7 @@
                     </div>
                     <div class=" product-card ">
                         <div class=" product-image ">
-                            <!-- <div class=" place_tag ">Something</div> -->
+                            <div class=" place_tag ">Something</div>
                             <img src=" ./img/parkour-spots/card1.jpg " class=" spot-thumb " alt=" ">
                             <button class=" spot-card ">View on Google Maps</button>
                         </div>
@@ -189,7 +190,7 @@
                     </div>
                     <div class=" product-card ">
                         <div class=" product-image ">
-                            <!-- <div class=" place_tag ">Something</div> -->
+                            <div class=" place_tag ">Something</div>
                             <img src=" ./img/parkour-spots/card1.jpg " class=" spot-thumb " alt=" ">
                             <button class=" spot-card ">View on Google Maps</button>
                         </div>
@@ -200,18 +201,29 @@
                         </div>
 
 
-                    </div>
+                    </div> -->
 
                 </div>
 
             </div>
         </section>
+        <section class="container-map">
 
+            <select name="select-location" id="select-location">
+                <option value="-1">Seleccione un lugar:</option>
+                <option value="-34.90779195245829, -56.20083312337183">Teatro Solis</option>
 
+            </select>
+
+            <div id="map">
+
+            </div>
+        </section>
     </div>
-    </section>
-    </div>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+    <script src="./spots.js"></script>
     <script src=" ./main.js "></script>
+    <script src="./mapa.js"></script>
 </body>
 
 

@@ -1,0 +1,87 @@
+{
+    "data": [{
+            "AlbumId": "1",
+            "id": "1",
+            "Nombre": "Gomensoro",
+            "Descripcion": "Plaza Tomás Gomensoro",
+            "Info": "sth about this spot...",
+            "Latitud": -34.91704552699211,
+            "Longitud": -56.1495752489121,
+            "Imagen": "https://i.postimg.cc/0j2k0WKW/gomensoro.jpg"
+        },
+        {
+            "AlbumId": "1",
+            "id": "10",
+            "Nombre": "Parque Idea Vilariño",
+            "Descripcion": "Este es un spot",
+            "Latitud": -34.906103960274415,
+            "Longitud": -56.18612887098081,
+            "Imagen": "https://i.postimg.cc/fLvWXnyS/ideavilari-o.jpg"
+        },
+        {
+            "AlbumId": "1",
+            "id": "11",
+            "Nombre": "Intendencia",
+            "Descripcion": "Plaza Damaso Antonio Larrañaga",
+            "Latitud": -34.906103960274415,
+            "Longitud": -56.18612887098081,
+            "Imagen": "https://i.postimg.cc/XNQ7YbtT/intendencia.jpg"
+        },
+        {
+            "AlbumId": "1",
+            "id": "12",
+            "Nombre": "Plaza 11",
+            "Descripcion": "Este es un spot",
+            "Latitud": -34.906103960274415,
+            "Longitud": -56.18612887098081,
+            "Imagen": "https://i.postimg.cc/WbyN07N8/plaza11.jpg"
+        },
+        {
+            "AlbumId": "1",
+            "id": "13",
+            "Nombre": "Plaza Argentina",
+            "Descripcion": "Este es un spot",
+            "Latitud": -34.906103960274415,
+            "Longitud": -56.18612887098081,
+            "Imagen": "https://i.postimg.cc/XNQ7YbtT/intendencia.jpg"
+        },
+        {
+            "AlbumId": "1",
+            "id": "14",
+            "Nombre": "Teatro Solis",
+            "Descripcion": "Este es un spot",
+            "Latitud": -34.906103960274415,
+            "Longitud": -56.18612887098081,
+            "Imagen": "https://i.postimg.cc/vHT81KsD/teatrosolis.jpg"
+        },
+        {
+            "AlbumId": "1",
+            "id": "14",
+            "Nombre": "Teatro Solis",
+            "Descripcion": "Este es un spot",
+            "Latitud": -34.906103960274415,
+            "Longitud": -56.18612887098081,
+            "Imagen": "https://i.postimg.cc/vHT81KsD/teatrosolis.jpg"
+        },
+        {
+            "AlbumId": "1",
+            "id": "14",
+            "Nombre": "Teatro Solis",
+            "Descripcion": "Este es un spot",
+            "Latitud": -34.906103960274415,
+            "Longitud": -56.18612887098081,
+            "Imagen": "https://i.postimg.cc/vHT81KsD/teatrosolis.jpg"
+        },
+        {
+            "AlbumId": "1",
+            "id": "14",
+            "Nombre": "Teatro Solis",
+            "Descripcion": "Este es un spot",
+            "Latitud": -34.906103960274415,
+            "Longitud": -56.18612887098081,
+            "Imagen": "https://i.postimg.cc/vHT81KsD/teatrosolis.jpg"
+        }
+
+
+    ]
+}
